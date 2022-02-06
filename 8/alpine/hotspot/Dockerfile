@@ -1,7 +1,10 @@
 # FIXME(oleg_nenashev): This is not an official AdoptOpenJDK Docker Image.
 # There is no official Alpine images at the moment.
 # Needs upgrade when/if there is an official alpine image.
-FROM adoptopenjdk/openjdk8:jdk8u322-b06-alpine
+# FROM adoptopenjdk/openjdk8:jdk8u322-b06-alpine
+
+FROM FROM  chinafengzhao/openjdk-alpine-with-chinese-timezone
+
 
 RUN apk add --no-cache \
   bash \
